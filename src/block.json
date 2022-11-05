@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "hoyrymoottori-blocks/hoyry-block-template",
+	"version": "0.1.0",
+	"title": "Höyry: Block template",
+	"category": "theme",
+	"icon": "block-default",
+	"description": "This is a block template.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "hoyry-block-template",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
