@@ -1,12 +1,13 @@
 {
 	"name": "hoyry-block-template",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A template for building Höyry blocks.",
 	"author": "Digi- ja Mainostoimisto Höyry Oy",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build",
+		"build:translations": "hoyry-build-translations",
+		"build": "npm run build:translations && wp-scripts build",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
@@ -16,6 +17,12 @@
 	},
 	"devDependencies": {
 		"@wordpress/icons": "^9.46.0",
-		"@wordpress/scripts": "^27.5.0"
+		"@wordpress/scripts": "^27.5.0",
+		"@hoyrynpm/block-translations": "^1.0.0"
+		// Embla Carousel is the default carousel library for Höyry blocks.
+		//"embla-carousel": "^8.5.2", 
+		//"embla-carousel-autoplay": "^8.5.2",
+		//"embla-carousel-class-names": "^8.5.2",
+		//"embla-carousel-fade": "^8.5.2",
 	}
 }
