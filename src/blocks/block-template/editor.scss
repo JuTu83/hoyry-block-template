@@ -1,0 +1,17 @@
+.wp-block-hoyry-block-template{
+
+	.hoyry-block-template-wrapper{
+
+		.hoyry-block-template-container{
+
+			> .wp-block-hoyry-block-template-item{
+				outline: 1px dashed #ccc;
+				margin-bottom: 1em;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

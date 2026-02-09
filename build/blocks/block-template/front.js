@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){document.querySelectorAll(".wp-block-hoyry-block-template").forEach(e=>{e.classList.add("is-initialized")})});

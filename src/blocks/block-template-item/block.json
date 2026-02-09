@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"version": "0.1.0",
+	"name": "hoyry/block-template-item",
+	"icon": "format-image",
+	"category": "hoyry",
+	"keywords": [ "template", "item", "child" ],
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"parent": [ "hoyry/block-template" ],
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "core/heading",
+				"attributes": {
+					"content": "Item heading"
+				}
+			},
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "Item paragraph content."
+				}
+			}
+		]
+	},
+	"textdomain": "hoyry-block-template",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}

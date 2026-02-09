@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "version": "0.1.0",
+  "name": "hoyry/block-template",
+  "icon": "block-default",
+  "category": "hoyry",
+  "keywords": [
+    "template",
+    "block",
+    "hoyry"
+  ],
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "hoyry/block-template-item",
+        "innerBlocks": [
+          {
+            "name": "core/heading",
+            "attributes": {
+              "content": "Template heading"
+            }
+          },
+          {
+            "name": "core/paragraph",
+            "attributes": {
+              "content": "Template paragraph content."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "textdomain": "hoyry-block-template",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./front.js",
+  "attributes": {
+    "itemCount": {
+      "type": "number",
+      "default": 1
+    },
+    "showBorder": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
